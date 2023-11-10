@@ -42,7 +42,7 @@ resource "aws_security_group" "database_security_group" {
 
 resource "aws_db_subnet_group" "database_subnet_group" {
   name        = "${var.app_name}-rds-postgres-subnets"
-  subnet_ids  = ["subnet-041f7d5d64cdf447a", "subnet-06ea3d9c2548d3254"]
+  subnet_ids  = ["subnet-041f7d5d64cdf447a", "subnet-00bbb15037bbc276c"]
   description = "Subnets para o rds postgres"
 
   tags = {
