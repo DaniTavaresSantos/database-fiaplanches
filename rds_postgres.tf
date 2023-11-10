@@ -19,7 +19,7 @@ data "aws_availability_zones" "available" {
 resource "aws_security_group" "database_security_group" {
   name        = "${var.environment}-rds-postgres-sg"
   description = "Liberacao da porta 5432 para acesso ao rds postgres"
-  vpc_id      = "vpc-095eb68b72c27e87b"
+  vpc_id      = "vpc-044327d0a7bb8d027"
 
   ingress {
     from_port       = 5432
@@ -42,7 +42,7 @@ resource "aws_security_group" "database_security_group" {
 
 resource "aws_db_subnet_group" "database_subnet_group" {
   name        = "${var.app_name}-rds-postgres-subnets"
-  subnet_ids  = ["subnet-0719b6a5d9d281b31", "subnet-0d11eb1ee35634bec"]
+  subnet_ids  = ["subnet-041f7d5d64cdf447a", "subnet-06ea3d9c2548d3254"]
   description = "Subnets para o rds postgres"
 
   tags = {
