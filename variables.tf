@@ -45,15 +45,15 @@ variable "vpc_info" {
   })
   description = "Informacoes da vpc fiap lanches"
   default = {
-    vpc_id           = "vpc-056c8ad0a004f0cac"
-    private_subnet_1 = "subnet-029d36db94f609bca"
-    private_subnet_2 = "subnet-0f37608a67d95733c"
-    public_subnet_1  = "subnet-061cc1584dfbf7f85"
-    public_subnet_2  = "subnet-086cc8d90563e4c0c"
+    vpc_id           = "vpc-0e2e5d16541f7b5b3"
+    private_subnet_1 = "subnet-02cf83f8e2da11099"
+    private_subnet_2 = "subnet-05498d3edd0d960d2"
+    public_subnet_1  = "subnet-0d3d1953af04f7061"
+    public_subnet_2  = "subnet-06b778e840e1f6649"
   }
 }
 
 variable "sg_info" {
   type    = string
-  default = "sg-09a43e6cf8a443c1e"
+  default = "sg-02819e6a01cac4bab"
 }
